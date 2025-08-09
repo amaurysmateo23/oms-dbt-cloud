@@ -1,0 +1,13 @@
+sources:
+  - name: landing
+    database: SLEEKMART_OMS        # <- corregido
+    schema: L1_LANDING
+    tables:
+      - name: customers
+        identifier: CUSTOMERS
+      - name: orders                 # nombre “amigable” que usarás en source()
+        identifier: ORDERS         # nombre real en Snowflake
+      - name: orderitems
+        identifier: ORDERITEMS
+      - name: employees
+        identifier: EMPLOYEES
